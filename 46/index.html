@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating Our Time Together</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            overflow: hidden; /* Hide overflowing hearts */
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        .message {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #666666;
+        }
+
+        .poem {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 20px;
+            color: #444444;
+        }
+
+        .image-container {
+            margin-top: 30px;
+        }
+
+        #image {
+            max-width: 90%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #999999;
+        }
+
+        /* Heart Animation */
+        @keyframes heartShower {
+            0% {
+                transform: translateY(-1000px) rotate(0deg) scale(0.7);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(200px) rotate(0deg) scale(0.7);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(1000px) rotate(360deg) scale(0.7);
+                opacity: 0;
+            }
+        }
+
+        .heart {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-image: url('heart.png'); /* Replace 'heart.png' with the path to your heart image */
+            background-repeat: no-repeat;
+            background-size: contain;
+            animation: heartShower 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Celebrating Our Time Together</h1>
+    <div class="message">
+        <p>Dear Sharon,</p>
+        <p>Today marks our incredible journey of 3 years and 10 months together. Though we may be physically apart right now, distance can never diminish the love that binds us.</p>
+        <p>In every moment, you are in my thoughts and in my heart. I long to be by your side, to hold you close, and to create countless new memories together. But until we can reunite, please know that my love for you knows no boundaries.</p>
+        <div class="poem">
+            <p>You're far away, yet always near,</p>
+            <p>In my heart, you're crystal clear.</p>
+            <p>Though I miss you every day,</p>
+            <p>Our love will guide me, come what may.</p>
+            <p>As the days pass by, and time draws near,</p>
+            <p>Counting down the weeks, my dear.</p>
+            <p>Memorial weekend, we'll finally embrace,</p>
+            <p>Our love's reunion, a cherished space.</p>
+        </div>
+        <p>Thank you for being the love of my life. I eagerly await the moment we can be together again.</p>
+        <p>With all my love,</p>
+        <p>DThai</p>
+    </div>
+    <div class="image-container">
+        <img id="image" src="path/to/your/image.jpg" alt="Image of Us">
+    </div>
+    <div class="footer">
+        <p>This webpage is dedicated to celebrating our love on this special day. Created with the help of ChatGPT.</p>
+    </div>
+    <!-- Heart Animation -->
+    <script>
+        function createHearts() {
+            const numHearts = 200; // Adjust the number of hearts as desired
+            const container = document.body;
+            const width = container.offsetWidth;
+            const height = container.offsetHeight;
+
+            for (let i = 0; i < numHearts; i++) {
+                const heart = document.createElement("div");
+                heart.className = "heart";
+                heart.style.left = Math.random() * width + "px";
+                heart.style.top = Math.random() * height + "px";
+                container.appendChild(heart);
+            }
+        }
+
+        createHearts();
+    </script>
+</body>
+</html>
