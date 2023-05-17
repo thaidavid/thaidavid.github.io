@@ -64,7 +64,7 @@
             position: absolute;
             width: 30px;
             height: 30px;
-            background-image: url('./heart.png'); /* Replace 'heart.png' with the path to your heart image */
+            background-image: url('heart.png'); /* Replace 'heart.png' with the path to your heart image */
             background-repeat: no-repeat;
             background-size: contain;
             animation: heartShower 5s linear infinite;
@@ -88,4 +88,33 @@
             <p>Our love's reunion, a cherished space.</p>
         </div>
         <p>Thank you for being the love of my life. I eagerly await the moment we can be together again.</p>
-        <
+        <p>With all my love,</p>
+        <p>DThai</p>
+    </div>
+    <div class="image-container">
+        <img id="image" src="path/to/your/image.jpg" alt="Image of Us">
+    </div>
+    <div class="footer">
+        <p>This webpage is dedicated to celebrating our love on this special day. Created with the help of ChatGPT.</p>
+    </div>
+    <!-- Heart Animation -->
+    <script>
+        function createHearts() {
+            const numHearts = 200; // Adjust the number of hearts as desired
+            const container = document.body;
+            const width = container.offsetWidth;
+            const height = container.offsetHeight;
+
+            for (let i = 0; i < numHearts; i++) {
+                const heart = document.createElement("div");
+                heart.className = "heart";
+                heart.style.left = Math.random() * width + "px";
+                heart.style.top = Math.random() * height + "px";
+                container.appendChild(heart);
+            }
+        }
+
+        createHearts();
+    </script>
+</body>
+</html>
