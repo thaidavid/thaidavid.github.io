@@ -95,12 +95,12 @@
         <img id="image" src="path/to/your/image.jpg" alt="Image of Us">
     </div>
     <div class="footer">
-        <p>This webpage is dedicated to celebrating our love on this special day. Created with the help of ChatGPT.</p>
+        <p>This webpage is dedicated to celebrating our love on this special day.</p>
     </div>
     <!-- Heart Animation -->
     <script>
         function createHearts() {
-            const numHearts = 200; // Adjust the number of hearts as desired
+            const numHearts = 500; // Adjust the number of hearts as desired
             const container = document.body;
             const width = container.offsetWidth;
             const height = container.offsetHeight;
